@@ -8,7 +8,7 @@ from Dev.helpers._spotify import parse_spotify, valid as spotify_valid
 
 _rec_cache: dict[tuple[int, str], dict] = {}
 
-SPOTIFY_IMPORT_LIMIT = 60
+SPOTIFY_IMPORT_LIMIT = 300
 
 
 def _track_to_dict(track) -> dict:
