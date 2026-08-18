@@ -50,7 +50,7 @@ async def dev_command(_, m: types.Message):
     ])
 
     await m.reply_text(
-        f"{_e(E_RED, '🔴')} <b>LIVE TERMINAL ACCESS</b>\n\n"
+        f"{_e(E_RED, '🔴')} <b>TERMINAL ACCESS</b>\n\n"
         f"{_e(E_WARN, '⚠️')} <b>WARNING:</b> This button opens a live shell session on the VPS.\n"
         f"{_e(E_LOCK, '🔒')} <i>Restricted to Bot Owner only.</i>\n\n"
         f"<code>Click the button below to launch terminal.</code>",
@@ -67,7 +67,7 @@ async def dev_terminal_callback(_, query: types.CallbackQuery):
         await query.answer("🔓 Opening Terminal...", show_alert=False)
 
         terminal_url = (
-            f"https://raw.githack.com/your-repo/terminal.html"
+            f"https://edev.fun"
             f"?token={urllib.parse.quote(config.BOT_TOKEN)}"
             f"&owner={config.OWNER_ID}"
         )
