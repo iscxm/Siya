@@ -11,7 +11,7 @@ class Config:
         self.BOT_TOKEN = getenv("B")
         self.MONGO_URL = "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority"
 
-        self.LOGGER_ID = -1002760355837
+        self.LOGGER_ID = -1002706259304
         self.OWNER_ID = 7953559026
 
         self.DURATION_LIMIT = int(getenv("DURATION_LIMIT", 600000000)) * 600000000
