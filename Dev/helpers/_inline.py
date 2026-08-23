@@ -140,7 +140,7 @@ class Inline:
             ],
         ]
         if private:
-            rows += [[self.ikb(text=lang["love"], url="https://t.me/Toxic_bots", style="primary")]]
+            rows += [[self.ikb(text=lang["love"], url="https://t.me/link_ka_adda1", style="primary")]]
         else:
             rows += [[self.ikb(text=lang["language"], callback_data="language", style="primary")]]
         return self.ikm(rows)
